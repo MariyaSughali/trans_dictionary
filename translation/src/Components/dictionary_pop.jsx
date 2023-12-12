@@ -110,6 +110,10 @@ function DictionaryPop() {
             setHeadings(headings);
           }
         }
+      } else {
+        setData([]);
+        setIsValid(false);
+        setHeadings([]);
       }
       setToShow(true);
     } catch (error) {
@@ -119,6 +123,7 @@ function DictionaryPop() {
 
   const handleBackButtonClick = () => {
     setToShow(false);
+    setIsValid(true);
   };
   const handleCloseButtonClick = () => {
     setToShow(false);
