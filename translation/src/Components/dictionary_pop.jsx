@@ -160,7 +160,11 @@ function DictionaryPop() {
           </span>
           {data && (
             <div>
-              <div>
+              <div className="dict_heading">
+                <button className="pop_back" onClick={handleBackButtonClick}>
+                  <span class="material-symbols-outlined">arrow_back</span>{" "}
+                </button>
+
                 <input
                   id="searchInput"
                   type="text"
@@ -170,7 +174,6 @@ function DictionaryPop() {
                 />
               </div>
               <div className="table-container">
-                {" "}
                 <table>
                   <thead>
                     <tr>
@@ -198,7 +201,6 @@ function DictionaryPop() {
               <div>{!isvalid && <h3>No data available</h3>}</div>
             </div>
           )}
-          <button onClick={handleBackButtonClick}>Back</button>
         </div>
       ) : (
         <div>
@@ -244,7 +246,9 @@ function DictionaryPop() {
               {!isvalid && <h3>Select a category</h3>}
             </div>
             <div>
-              <button onClick={handleApply}>APPLY</button>
+              <button className="pop_button" onClick={handleApply}>
+                APPLY
+              </button>
             </div>
           </div>
         </div>
