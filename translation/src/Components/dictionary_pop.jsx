@@ -140,7 +140,7 @@ function DictionaryPop() {
     tableRows.forEach((row) => {
       const rowData = row.textContent.toLowerCase();
       if (rowData.startsWith(searchTerm)) {
-        row.style.display = "table-row";
+        row.style.display = "flex";
         setIsValid(true);
       } else {
         row.style.display = "none";
