@@ -306,15 +306,21 @@
 }
 
 .pop th {
-  background-color: #f2f2f2;
   border: 1px solid #dddddd;
   padding: 8px;
   text-align: center;
+  flex: 1;
 }
 .pop td {
   border: 1px solid #dddddd;
   padding: 8px;
   text-align: center;
+  flex: 1;
+}
+.pop tr {
+  display: flex;
+  margin-bottom: 10px;
+  border: 1px solid #dddddd;
 }
 .table-container {
   max-height: 400px;
