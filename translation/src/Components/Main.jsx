@@ -144,12 +144,10 @@ function Main() {
           id="editor"
           placeholder={"Write something here..."}
         />
-        {isclicked ? (
+        {isclicked && (
           <div className="dictionarypop">
             <DictionaryPop />
           </div>
-        ) : (
-          <div></div>
         )}
       </div>
       <div className="trans_footer">
